@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Home</title>
+  </head>
+  <body>
+    <h1><div style="text-align:center">PATIENT RE-ADMITTANCE CHECKING</div></h1>
+    <hr>
+    </br>
+    <h1><div style="text-align:center">Please enter the required values in the below form</div></h1>
+    </br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+
+          <form method="POST" action="/predict">
+
+            <div class="form-group">
+              <label for="race"><p class="font-weight-bold">Race</p></label>
+              <input type="text" name="race">
+              <p>values should be in range of [0,4]</p>
+            </div>
+
+            <div class="form-group">
+              <label for="gender"><p class="font-weight-bold">Gender</p></label>
+              <input type="text" name="gender">
+              <p>Enter either 0 or 1</p>
+            </div>
+
+            <div class="form-group">
+              <label for="age"><p class="font-weight-bold">Age</p></label>
+              <input type="text" name="age">
+              <p>Enter in between 0 and 1</p>
+            </div>
+
+            <div class="form-group">
+              <label for="admissiontypeid"><p class="font-weight-bold">Admission_type_id</p></label>
+              <input type="text" name="admissiontypeid">
+              <p>Enter in between 0 and 1</p>
+            </div>
+
+            <div class="form-group">
+              <label for="dischargedispositionid"><p class="font-weight-bold">Discharge_disposition_id</p></label>
+              <input type="text" name="dischargedispositionid">
+              <p>Enter in between 0 and 1</p>
+            </div>
+
+            <div class="form-group">
+              <label for="timeinhospital"><p class="font-weight-bold">Time_in_hospital</p></label>
+              <input type="text" name="timeinhospital">
+              <p>Enter in between 0 and 1</p>
+            </div>
+
+            <div class="form-group">
+              <label for="numlabprocedures"><p class="font-weight-bold">Num_lab_procedures</p></label>
+              <input type="text" name="numlabprocedures">
+              <p>Enter in between 0 and 1</p>
+            </div>
+
+            <div class="form-group">
+              <label for="numprocedures"><p class="font-weight-bold">Num_procedures</p></label>
+              <input type="text" name="numprocedures">
+              <p>Enter in between 0 and 1</p>
+            </div>
+
+            <div class="form-group">
+              <label for="nummedications"><p class="font-weight-bold">Num_medications</p></label>
+              <input type="text" name="nummedications">
+              <p>Enter in between 0 and 1</p>
+            </div>
+
+            <div class="form-group">
+              <label for="numberemergency"><p class="font-weight-bold">Number_emergency</p></label>
+              <input type="text" name="numberemergency">
+              <p>Enter in between 0 and 1</p>
+            </div>
+
+            <div class="form-group">
+              <label for="diag1"><p class="font-weight-bold">Diag_1</p></label>
+              <input type="text" name="diag1">
+              <p>Enter integer values in range [0,8]</p>
+            </div>
+
+            <div class="form-group">
+              <label for="diag2"><p class="font-weight-bold">Diag_2</p></label>
+              <input type="text" name="diag2">
+              <p>Enter integer values in range [0,8]</p>
+            </div>
+
+            <div class="form-group">
+              <label for="diag3"><p class="font-weight-bold">Diag_3</p></label>
+              <input type="text" name="diag3">
+              <p>Enter integer values in range [0,8]</p>
+            </div>
+
+            <div class="form-group">
+              <label for="numberdiagnoses"><p class="font-weight-bold">Number_diagnoses</p></label>
+              <input type="text" name="numberdiagnoses">
+              <p>Enter in between 0 and 1</p>
+            </div>
+
+            <div class="form-group">
+              <label for="maxgluserum"><p class="font-weight-bold">Max_glu_serum</p></label>
+              <input type="text" name="maxgluserum">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="acresult"><p class="font-weight-bold">A1Cresult</p></label>
+              <input type="text" name="acresult">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="metformin"><p class="font-weight-bold">Metformin</p></label>
+              <input type="text" name="metformin">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="repaglinide"><p class="font-weight-bold">Repaglinide</p></label>
+              <input type="text" name="repaglinide">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="nateglinide"><p class="font-weight-bold">Nateglinide</p></label>
+              <input type="text" name="nateglinide">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="chlorpropamide"><p class="font-weight-bold">Chlorpropamide</p></label>
+              <input type="text" name="chlorpropamide">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="glimepiride"><p class="font-weight-bold">Glimepiride</p></label>
+              <input type="text" name="glimepiride">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="acetohexamide"><p class="font-weight-bold">Acetohexamide</p></label>
+              <input type="text" name="acetohexamide">
+              <p>Enter 1 or 0</p>
+            </div>
+
+            <div class="form-group">
+              <label for="glipizide"><p class="font-weight-bold">Glipizide</p></label>
+              <input type="text" name="glipizide">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="glyburide"><p class="font-weight-bold">Glyburide</p></label>
+              <input type="text" name="glyburide">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="tolbutamide"><p class="font-weight-bold">Tolbutamide</p></label>
+              <input type="text" name="tolbutamide">
+              <p>Enter 1 or 0</p>
+            </div>
+
+            <div class="form-group">
+              <label for="pioglitazone"><p class="font-weight-bold">Pioglitazone</p></label>
+              <input type="text" name="pioglitazone">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="rosiglitazone"><p class="font-weight-bold">Rosiglitazone</p></label>
+              <input type="text" name="rosiglitazone">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="acarbose"><p class="font-weight-bold">Acarbose</p></label>
+              <input type="text" name="acarbose">
+              <p>Enter integer values from 0 to 3</p>
+            </div>
+
+            <div class="form-group">
+              <label for="miglitol"><p class="font-weight-bold">Miglitol</p></label>
+              <input type="text" name="miglitol">
+              <p>Enter 1 or 0</p>
+            </div>
+
+            <div class="form-group">
+              <label for="troglitazone"><p class="font-weight-bold">Troglitazone</p></label>
+              <input type="text" name="troglitazone">
+              <p>Enter 1 or 0</p>
+            </div>
+
+            <div class="form-group">
+              <label for="tolazamide"><p class="font-weight-bold">Tolazamide</p></label>
+              <input type="text" name="tolazamide">
+              <p>Enter 1 or 0</p>
+            </div>
+
+            <div class="form-group">
+              <label for="insulin"><p class="font-weight-bold">Insulin</p></label>
+              <input type="text" name="insulin">
+              <p>Enter 1 or 0</p>
+            </div>
+
+            <div class="form-group">
+              <label for="glyburidemetformin"><p class="font-weight-bold">Glyburide-metformin</p></label>
+              <input type="text" name="glyburidemetformin">
+              <p>Enter 1 or 0</p>
+            </div>
+
+            <div class="form-group">
+              <label for="glipizidemetformin"><p class="font-weight-bold">Glipizide-metformin</p></label>
+              <input type="text" name="glipizidemetformin">
+              <p>Enter 1 or 0</p>
+            </div>
+
+            <div class="form-group">
+              <label for="metforminpioglitazone"><p class="font-weight-bold">Metformin-pioglitazone'</p></label>
+              <input type="text" name="metforminpioglitazone">
+              <p>Enter 1 or 0</p>
+            </div>
+
+            <div class="form-group">
+              <label for="change"><p class="font-weight-bold">Change</p></label>
+              <input type="text" name="change">
+              <p>Enter 1 or 0</p>
+            </div>
+
+            <div class="form-group">
+              <label for="diabetesmed"><p class="font-weight-bold">DiabetesMed'</p></label>
+              <input type="text" name="diabetesmed">
+              <p>Enter 1 or 0</p>
+            </div>
+
+            <input class="btn btn-primary" type="submit" value="Submit">
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
